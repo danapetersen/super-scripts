@@ -1,0 +1,50 @@
+[user]
+	name = Dana Petersen
+	email = dana.petersen@jci.com
+[color]
+	branch = auto
+	ui = true
+[color "status"]
+	added = magenta
+	changed = green
+	untracked = green
+	deleted = red
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	br = branch
+	co = checkout
+	df = diff
+	lg = log -p
+    l = log --oneline --decorate --graph
+	hist = log --pretty=format:\"%C(yellow)%h %Creset %ad | %s %C(bold cyan)%d%Creset [%an] - %ar\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	visual = !gitk
+	update = pull origin
+	sync = push origin
+	winmerge = difftool -tool winmerge --no-prompt
+#	diffall = diffall.bat
+    filediff = diff --stat --color
+[format]
+	pretty = "Commit:  %C(yellow)%H%nAuthor:  %C(green)%aN <%aE>%nDate:    (%C(red)%ar%Creset) %ai%nSubject: %s%n%n%b"
+[http]
+	proxy = http://10.10.5.18:8080
+[core]
+	editor = 'C:/Program Files (x86)/Vim/Vim73/vim.exe'
+	autocrlf = true
+[diff]
+	guitool = kdiff3
+[difftool "kdiff3"]
+	path = C:/Program Files (x86)/KDiff3/kdiff3.exe
+[difftool "winmerge"]
+	cmd = "\"C:/Program Files (x86)/WinMerge/WinMergeU.exe\" \"$LOCAL\" \"$REMOTE\""
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = C:/Program Files (x86)/KDiff3/kdiff3.exe
+[mergetool "winmerge"]
+	cmd = "\"C:/Program Files (x86)/WinMerge/WinMergeU.exe\" \"$MERGED\" \"$REMOTE\""
