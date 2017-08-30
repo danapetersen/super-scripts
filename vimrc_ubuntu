@@ -1,0 +1,28 @@
+" Dana's VIM Config
+" v 1.0
+
+" Turn on line numbers
+set number
+
+" Sets how many lines of history to remember
+set history=500
+
+set autoread
+
+" Default to dark background
+set background=dark
+
+" Ignore case when searching
+set ignorecase
+
+" Highlight search results
+set hlsearch
+
+"Make search work like browsers
+set incsearch
+
+syntax enable
+
+set expandtab
+
+inoremap jk <ESC>
